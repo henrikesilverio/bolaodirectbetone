@@ -1,5 +1,13 @@
 /*!
- * scss main
+ * bootstrap
  */
 
-@import "functions";
+ @import "../../../node_modules/bootstrap/scss/bootstrap";
+
+/*!
+ * modules
+ */
+
+@import "../../game/game";
+@import "../../guess/guess";
+@import "../../login/login";
