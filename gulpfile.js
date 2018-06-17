@@ -10,7 +10,11 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('src/assets/css'));
 });
 
-gulp.task('host', ['styles'], function () {
+gulp.task('styles-watch', function () {
+    gulp.watch('src/**/*.scss', ['styles']);
+});
+
+gulp.task('host', ['styles', 'styles-watch'], function () {
     var settings = {
         root: 'src',
         host: 'localhost',

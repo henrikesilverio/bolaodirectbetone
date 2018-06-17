@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" ng-app="app">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work Sans">
     <title>Direct Bet One</title>
+
     <!-- main:css -->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- endinject -->
+
+    <!-- vendor:js -->
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="../node_modules/angular-ui-router/release/stateEvents.js"></script>
+    <!-- endinject -->
+
+    <!-- main:js -->
+    <script src="core/app.js"></script>
+    <script src="core/core.ctrl.js"></script>
+    <script src="login/login.ctrl.js"></script>
+    <!-- endinject -->
 </head>
-<body>
-    
+
+<body ui-view>
+
 </body>
+
 </html>
