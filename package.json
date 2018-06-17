@@ -16,6 +16,7 @@
   "homepage": "https://github.com/henrikesilverio/bolaodirectbetone#readme",
   "devDependencies": {
     "angular": "^1.7.0",
+    "angular-messages": "^1.7.2",
     "angular-ui-router": "^1.0.18",
     "bootstrap": "^4.1.1",
     "gulp": "^3.9.1",

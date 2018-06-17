@@ -11,7 +11,8 @@
 
 angular.module('app', [
     'ui.router',
-    'ui.router.state.events'
+    'ui.router.state.events',
+    'ngMessages'
 ])
 .config(config);
 

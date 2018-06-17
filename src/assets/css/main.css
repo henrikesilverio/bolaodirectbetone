@@ -6314,13 +6314,87 @@ a.text-dark:hover, a.text-dark:focus {
   max-width: 100%;
   height: auto; }
 
-.remember {
+.checkbox-custom {
+  position: relative;
+  padding-right: 0;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
   margin-bottom: 10px; }
-  .remember .checkbox1 {
-    padding-right: 0; }
-  .remember span.pass {
+  .checkbox-custom input[type=checkbox] {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    opacity: 0;
+    left: 0; }
+  .checkbox-custom span {
+    cursor: pointer;
+    position: relative;
+    margin-right: 5px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle; }
+    .checkbox-custom span:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: " ";
+      color: #31b484;
+      text-align: center;
+      font-size: 22px;
+      border: solid 2px #ddd;
+      line-height: 16px; }
+  .checkbox-custom span.pass {
     float: right;
     padding-top: 2px; }
+
+.checkbox-custom input:checked + span:before {
+  background: white;
+  border-color: white;
+  content: "\2713"; }
+
+.radio-custom {
+  position: relative;
+  padding-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer; }
+  .radio-custom input[type=radio] {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    opacity: 0;
+    left: 0; }
+  .radio-custom span {
+    cursor: pointer;
+    position: relative;
+    margin-right: 5px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    vertical-align: middle; }
+    .radio-custom span:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: " ";
+      color: #fff;
+      text-align: center;
+      font-size: 22px;
+      border: solid 2px #ddd;
+      line-height: 16px;
+      border-radius: 30px; }
+
+.radio-custom input:checked + span:before {
+  height: 20px;
+  width: 20px;
+  background: #31b484;
+  border-color: #ddd; }
 
 .btn-primary-login {
   color: #fff;
@@ -6340,3 +6414,8 @@ a.text-dark:hover, a.text-dark:focus {
   color: #292b1e;
   background-color: #f6b642;
   border-color: #c38514; }
+
+.forgot-password {
+  color: #31b484 !important;
+  font-weight: bold;
+  text-decoration: none !important; }
