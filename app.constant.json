@@ -1,0 +1,8 @@
+{
+    "db1": {
+        "apiBase": "http://dbo.db1.com.br:8080"
+    },
+    "bolao": {
+        "apiBase": "https://dbosaas.cfapps.io"
+    }
+}

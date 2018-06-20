@@ -2,19 +2,14 @@
 
 /**
  * @ngdoc overview
- * @name app
+ * @name app.config
  * @description
  * # app
  *
- * Main module of the application.
+ * Main config of the application.
  */
 
-angular.module('app', [
-    'ui.router',
-    'ui.router.state.events',
-    'ngMessages'
-])
-.config(config);
+app.config(config);
 
 var states = [
     {
@@ -39,7 +34,7 @@ var states = [
 
 function config($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/paginainicial');
-    
+
     angular.forEach(states, function (state) {
         $stateProvider.state(state.name, state.state);
     });

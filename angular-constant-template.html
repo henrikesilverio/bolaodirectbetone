@@ -1,0 +1,13 @@
+'use strict';
+
+/**
+ * @ngdoc overview
+ * @name app.constant
+ * @description
+ * # app
+ *
+ * Main constant of the application.
+ */
+
+app.module("<%= moduleName %>"<% if (createModule) { %>, []<% } %>)<% _.forEach(constants, function (constant) { %>
+    .<%= type %>("<%= constant.name %>", <%= constant.value %>)<% }); %>;
